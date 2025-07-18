@@ -142,15 +142,56 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className='mt-24 bg-slate-800 text-slate-100 py-10 px-4'>
-        <div className='max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between'>
-          <div className='text-center sm:text-left'>
-            <h3 className='text-lg font-semibold'>Easy Homes</h3>
-            <p className='text-sm text-slate-400'>Your perfect home is just a click away.</p>
+      <footer className="mt-24 bg-slate-900 text-slate-100 py-12 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+          {/* Brand */}
+          <div>
+            <h3 className="text-2xl font-bold mb-2 text-green-400">Easy Homes</h3>
+            <p className="text-sm text-slate-400">
+              Your perfect home is just a click away. Find, rent, or sell properties with ease.
+            </p>
           </div>
-          <div className='mt-4 sm:mt-0 text-sm text-slate-400'>
-            &copy; {new Date().getFullYear()} Easy Homes. All rights reserved.
+
+          {/* Navigation Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
+            <ul className="space-y-2 text-slate-300 text-sm">
+              <li><a href="#" className="hover:text-green-400 transition">Home</a></li>
+              <li><a href="/about" className="hover:text-green-400 transition">About Us</a></li>
+              <li><a href="/search" className="hover:text-green-400 transition">Listings</a></li>
+              <li><a href="#" className="hover:text-green-400 transition">Contact</a></li>
+            </ul>
           </div>
+
+          {/* Contact or Socials */}
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Connect with Us</h4>
+            <div className="flex space-x-4 mt-2">
+              <a href="#" className="hover:text-blue-400 transition">
+                {/* Facebook */}
+                <svg className="w-5 h-5 fill-current text-slate-300 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M22 12a10 10 0 1 0-11.5 9.87v-6.99H8v-2.88h2.5V9.75c0-2.45 1.47-3.8 3.7-3.8 1.07 0 2.2.19 2.2.19v2.42H15.9c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.88h-2.34v6.99A10 10 0 0 0 22 12z" />
+                </svg>
+              </a>
+              <a href="#" className="hover:text-sky-400 transition">
+                {/* Twitter */}
+                <svg className="w-5 h-5 fill-current text-slate-300 hover:text-sky-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 19c7.5 0 11.6-6.2 11.6-11.6 0-.2 0-.4 0-.6A8.3 8.3 0 0 0 22 4.3a8.2 8.2 0 0 1-2.4.7 4.1 4.1 0 0 0 1.8-2.3c-.8.5-1.7.9-2.7 1.1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3 3.6a4.1 4.1 0 0 0 1.3 5.5 4.1 4.1 0 0 1-1.8-.5v.1a4.1 4.1 0 0 0 3.3 4 4.1 4.1 0 0 1-1.8.1 4.1 4.1 0 0 0 3.8 2.8A8.3 8.3 0 0 1 2 17.6a11.7 11.7 0 0 0 6 1.8" />
+                </svg>
+              </a>
+              <a href="#" className="hover:text-pink-500 transition">
+                {/* Instagram */}
+                <svg className="w-5 h-5 fill-current text-slate-300 hover:text-pink-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.8a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Footer */}
+        <div className="mt-10 border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
+          &copy; {new Date().getFullYear()} Easy Homes. All rights reserved.
         </div>
       </footer>
     </div>
